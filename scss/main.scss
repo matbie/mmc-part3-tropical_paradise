@@ -132,6 +132,15 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
+
 //HEADER SECTION
 
 .header {
@@ -461,16 +470,16 @@ body {
 		flex-direction: column;
 	}
 
-	&__form-label{
+	&__form-label {
 		margin-bottom: 0.5em;
 		text-transform: uppercase;
 	}
 
-	&__form-input{
+	&__form-input {
 		@include contactForm;
 	}
 
-	&__form-textarea{
+	&__form-textarea {
 		@include contactForm;
 		max-width: 100%;
 		min-width: 100%;
@@ -478,7 +487,7 @@ body {
 		min-height: 150px;
 	}
 
-	&__form-btn{
+	&__form-btn {
 		align-self: flex-end;
 		padding: 1em;
 		width: 100%;
@@ -489,60 +498,58 @@ body {
 		background-color: $main-color;
 		cursor: pointer;
 
-		&::before{
+		&::before {
 			background-color: $secondary-color;
 		}
 	}
-
 }
 
-.footer{
+.footer {
 	color: $pure-white;
 	background-color: $dark;
 
-	.wrapper{
+	.wrapper {
 		padding: 6em 2em 2em;
 	}
 
-	&__box{
+	&__box {
 		font-size: 1.4rem;
 	}
 
-	&__box-desktop{
+	&__box-desktop {
 		display: none;
 	}
 
-	&__box-title{
+	&__box-title {
 		margin-bottom: 1em;
 		font-size: 3rem;
 		text-transform: uppercase;
 	}
 
-	&__box-social{
+	&__box-social {
 		margin: 2em 0 1em;
 	}
 
-	&__box-link{
-		padding: 0 .3em;
+	&__box-link {
+		padding: 0 0.3em;
 		font-size: 3.6rem;
 		color: $pure-white;
 		text-decoration: none;
-		transition: color .3s;
+		transition: color 0.3s;
 
-		&:first-child{
+		&:first-child {
 			padding-left: 0;
 		}
 
-		&:hover{
+		&:hover {
 			color: $light-white;
 		}
 	}
 
-	&__bottom-text{
+	&__bottom-text {
 		padding: 2em;
 		text-align: center;
 	}
-
 }
 
 // ========================
@@ -663,43 +670,41 @@ body {
 		}
 	}
 
-	.footer{
-		&__boxes{
+	.footer {
+		&__boxes {
 			display: flex;
 			justify-content: space-between;
 		}
 
-
-		&__box-desktop{
+		&__box-desktop {
 			display: block;
 		}
 
-		&__box{
+		&__box {
 			margin: 0 2em;
 			width: 25%;
 
-			&:first-child{
+			&:first-child {
 				width: 50%;
 			}
 		}
 
-		&__box-title{
+		&__box-title {
 			font-size: 2.4rem;
 		}
 
-		&__box-list{
+		&__box-list {
 			list-style: none;
 		}
 
-		&__box-list-item{
+		&__box-list-item {
 			margin-bottom: 1em;
 
-			a{
+			a {
 				color: $light-white;
 				text-decoration: none;
 			}
 		}
-
 	}
 }
 
